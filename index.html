@@ -1,581 +1,482 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Milana Volnaya — кондитер, разработка десертных меню</title>
-<meta name="description" content="Милана Вольная: кондитер, в профессии с 2016 года. Разработка десертных меню и запуск десертного направления для отелей, ресторанов и кафе.">
+<meta name="description" content="Milana Volnaya: кондитер, в профессии с 2016 года. Разработка десертных меню и запуск десертного направления для отелей, ресторанов и кафе.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%233D2817'/%3E%3Cpath d='M94 50L64 45L42 16L33 16L47 45L21 45L12 35L6 35L12 50L6 65L12 65L21 55L47 55L33 84L42 84L64 55Z' transform='translate(10 10) scale(.8)' fill='none' stroke='%23B8935A' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta property="og:title" content="Milana Volnaya — кондитер, разработка десертных меню">
+<meta property="og:description" content="Разработка десертных меню и запуск десертного направления для отелей, ресторанов и кафе.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://agent-6aec6c83f676a9b355e75040--cool-elf-fe83fe.netlify.app/photos/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #FAF8F5;
-  --ink: #2A2A2A;
-  --choc: #3D2817;
-  --gold: #B8935A;
-  --line: #E8E4DF;
-  --mute: #625b54;
-  --serif: 'Cormorant Garamond', Georgia, serif;
-  --sans: 'Inter', system-ui, sans-serif;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: var(--sans);
-  background: var(--bg);
-  color: var(--ink);
-  line-height: 1.6;
-  font-size: 16px;
-}
-h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; color: var(--choc); }
-a { color: var(--gold); text-decoration: none; }
-a:hover { text-decoration: underline; }
-.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-section { padding: 80px 0; border-bottom: 1px solid var(--line); }
-section:last-of-type { border-bottom: none; }
+:root{--bg:#FAF8F5;--ink:#2A2A2A;--choc:#3D2817;--gold:#B8935A;--line:#E8E4DF;--mute:#625b54;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--choc);line-height:1.1}
+h1{font-size:clamp(2.6rem,7vw,4.4rem);letter-spacing:-.01em}
+h1 .role{display:block;text-wrap:balance;margin-top:.6rem;font-size:.42em;line-height:1.25;letter-spacing:0;color:var(--ink)}
+h2{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:1.5rem}
+h3{font-size:1.5rem;margin-bottom:.4rem}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+section{padding:4.5rem 0}
+.lead{max-width:60ch;color:var(--mute)}
+.sr{position:absolute;left:-999px}
+:focus-visible{outline:2px solid var(--choc);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--bg);padding:.5rem;z-index:99}
 
-/* NAV */
-header {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--bg);
-  border-bottom: 1px solid var(--line);
-}
-.nav {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 18px 24px; max-width: 1100px; margin: 0 auto;
-}
-.logo {
-  font-family: var(--serif); font-size: 24px; font-weight: 600;
-  color: var(--choc); letter-spacing: 0.5px;
-}
-.logo span { color: var(--gold); }
-.nav-links { display: flex; gap: 28px; list-style: none; }
-.nav-links a {
-  color: var(--ink); font-size: 14px; font-weight: 500;
-  transition: color 0.2s;
-}
-.nav-links a:hover { color: var(--gold); text-decoration: none; }
+header{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;padding:.7rem 0}
+.brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.mono{font:600 1.35rem/1 var(--serif);color:var(--ink);border:1px solid var(--gold);padding:.5rem .55rem;display:flex;gap:.15rem;align-items:center}
+.mono i{width:1px;height:1.1em;background:var(--gold);transform:rotate(20deg)}
+.brand b{display:block;font:500 1.15rem/1.2 var(--serif);color:var(--choc)}
+.brand small{display:block;font-size:.78rem;color:var(--mute)}
+nav{display:flex;gap:1.4rem;overflow-x:auto;white-space:nowrap;font-size:.92rem;padding-bottom:.2rem}
+nav a{text-decoration:none;padding:.2rem 0;border-bottom:1px solid transparent}
+nav a:hover{border-color:var(--gold)}
 
-/* HERO */
-.hero {
-  padding: 100px 0 80px;
-  background: linear-gradient(180deg, var(--bg) 0%, #f3efe9 100%);
-}
-.hero-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 60px; align-items: center;
-}
-.hero h1 {
-  font-size: 64px; line-height: 1.05;
-  margin-bottom: 20px;
-}
-.hero h1 em { font-style: italic; color: var(--gold); }
-.hero .subtitle {
-  font-size: 18px; color: var(--mute);
-  margin-bottom: 32px; max-width: 480px;
-}
-.hero p.desc {
-  font-size: 16px; color: var(--ink);
-  margin-bottom: 36px; max-width: 520px;
-}
-.btn {
-  display: inline-block;
-  background: var(--choc); color: #fff;
-  padding: 14px 32px; border-radius: 4px;
-  font-size: 15px; font-weight: 500;
-  transition: background 0.2s;
-}
-.btn:hover { background: var(--gold); color: #fff; text-decoration: none; }
-.hero-img {
-  width: 100%; aspect-ratio: 4/5; object-fit: cover;
-  border-radius: 8px;
-}
-.hero-caption {
-  font-size: 13px; color: var(--mute);
-  margin-top: 12px; font-style: italic;
-}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.btn{display:inline-block;font:500 .95rem var(--sans);text-decoration:none;background:var(--choc);color:var(--bg);padding:.85rem 1.6rem;border:1px solid var(--choc);border-radius:2px;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--bg);color:var(--choc)}
 
-/* ABOUT */
-.about-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 60px; align-items: start;
-}
-.about-text p { margin-bottom: 18px; color: var(--ink); }
-.stats {
-  display: grid; grid-template-columns: repeat(2, 1fr);
-  gap: 24px; margin-top: 32px;
-}
-.stat {
-  background: #fff; padding: 24px;
-  border-radius: 8px; border: 1px solid var(--line);
-}
-.stat-num {
-  font-family: var(--serif); font-size: 36px;
-  color: var(--gold); font-weight: 600;
-  line-height: 1;
-}
-.stat-label {
-  font-size: 13px; color: var(--mute);
-  margin-top: 8px;
-}
+.hero{padding:0;display:grid}
+.hero-photo{order:2;position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--line)}
+/* ЗАМЕНИТЬ: фото hero (photos/hero-b2b.jpg или hero-b2c.jpg) */
+.hero-bg{position:absolute;inset:-8% 0;background:linear-gradient(160deg,#d8cdbd,#a98b6a 60%,#3D2817);will-change:transform}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.4s ease}
+.slide.on{opacity:1}
+.dots{position:absolute;left:1rem;bottom:1rem;display:flex;gap:.5rem;z-index:2}
+.dots button{width:.55rem;height:.55rem;padding:0;border-radius:50%;border:1px solid var(--choc);background:transparent;opacity:.55;cursor:inherit}
+.dots button[aria-current="true"]{background:var(--choc);opacity:.9}
+.dots button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.hero-in{padding:3.5rem 1.25rem}
+.hero-in .lead{margin-top:1.4rem;font-size:1.1rem}
 
-/* PORTFOLIO */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px; margin-top: 40px;
-}
-.portfolio-grid img {
-  width: 100%; aspect-ratio: 1;
-  object-fit: cover; border-radius: 6px;
-  transition: transform 0.3s;
-}
-.portfolio-grid img:hover { transform: scale(1.02); }
+.about{display:grid;gap:2rem}
+.portrait{max-width:320px;align-self:start}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 25%;background:var(--line)}
+.range{display:grid;gap:2rem 3rem;margin-top:2.5rem}
+.range h3{font-size:1.35rem;margin-bottom:.5rem;padding-top:.9rem;border-top:1px solid var(--gold)}
+.range p{font-size:.95rem;line-height:1.7;color:var(--ink)}
+.range p+p{margin-top:.8rem}
+.range b{font-weight:500;color:var(--choc)}
+.cap{margin-top:.7rem;font-size:.74rem;letter-spacing:.06em;color:var(--mute);opacity:.85}
+.range .full{display:none}
+#range.open .full{display:block}
+#range.open .hl{display:none}
+.more-btn{margin-top:2.2rem;background:none;border:0;border-bottom:1px solid var(--gold);padding:0 0 .2rem;font:inherit;font-size:.9rem;color:var(--choc);cursor:inherit}
+.more-btn:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+@media (scripting:none){.range .full{display:block}.range .hl,.more-btn{display:none}}
+.range-note{margin-top:2.5rem;max-width:62ch;color:var(--mute);font-size:.95rem}
+.about p+p{margin-top:1rem}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;border-top:1px solid var(--gold);padding-top:1.2rem;align-content:start}
+.facts b{display:block;font:500 2.4rem/1 var(--serif);color:var(--choc)}
+.facts span{font-size:.88rem;color:var(--mute)}
 
-/* RANGE */
-.range-tabs {
-  display: flex; gap: 12px; flex-wrap: wrap;
-  margin-bottom: 32px;
-}
-.tab {
-  padding: 10px 20px; border: 1px solid var(--line);
-  background: #fff; border-radius: 20px;
-  cursor: pointer; font-size: 14px;
-  transition: all 0.2s;
-}
-.tab.active, .tab:hover {
-  background: var(--choc); color: #fff;
-  border-color: var(--choc);
-}
-.range-content { display: none; }
-.range-content.active { display: block; }
-.range-content h3 {
-  font-size: 24px; margin-bottom: 16px;
-  margin-top: 24px;
-}
-.range-content h3:first-child { margin-top: 0; }
-.range-content p { margin-bottom: 12px; }
-.range-content ul {
-  margin: 12px 0 20px 20px;
-}
-.range-content li { margin-bottom: 6px; }
+.alt{background:#fff;border-block:1px solid var(--line)}
+.steps{list-style:none;padding:0;margin:0 0 2.2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid var(--gold);padding-top:.9rem}
+.steps li::before{content:counter(s);display:block;font-family:var(--serif);font-size:1.6rem;color:var(--gold);line-height:1;margin-bottom:.5rem}
+.steps b{display:block;font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--choc);line-height:1.15;margin-bottom:.3rem}
+.steps span{color:var(--mute);font-size:.95rem}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
 
-/* EXPERIENCE */
-.exp-list { margin-top: 40px; }
-.exp-item {
-  display: grid; grid-template-columns: 140px 1fr;
-  gap: 32px; padding: 28px 0;
-  border-bottom: 1px solid var(--line);
-}
-.exp-item:last-child { border-bottom: none; }
-.exp-year {
-  font-family: var(--serif); font-size: 20px;
-  color: var(--gold); font-weight: 600;
-}
-.exp-title {
-  font-family: var(--serif); font-size: 22px;
-  color: var(--choc); margin-bottom: 8px;
-}
-.exp-desc { color: var(--mute); }
+.tabs{display:flex;gap:1.5rem;margin-bottom:1.5rem;border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+.tabs button{font:500 1rem var(--sans);background:none;border:0;border-bottom:2px solid transparent;padding:.6rem 0;color:var(--mute);cursor:pointer;margin-bottom:-1px}
+.tabs button[aria-selected=true]{color:var(--choc);border-color:var(--gold)}
+.grid{display:grid;gap:1rem}
+.ph{position:relative;aspect-ratio:1/1;background:linear-gradient(135deg,#e8e4df,#d6cbbb);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .9rem .8rem;font-size:.85rem;color:var(--ink);background:linear-gradient(transparent,rgba(250,248,245,.92))}
 
-/* VISUAL */
-.visual-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 24px; margin-top: 40px;
-}
-.visual-card {
-  background: #fff; padding: 20px;
-  border-radius: 8px; border: 1px solid var(--line);
-}
-.visual-card img {
-  width: 100%; aspect-ratio: 4/3;
-  object-fit: cover; border-radius: 4px;
-  margin-bottom: 12px;
-}
-.visual-label {
-  font-size: 13px; color: var(--mute);
-  text-transform: uppercase; letter-spacing: 1px;
-}
+/* До / После */
+.pair-wrap{position:relative;margin-top:2rem}
+.pair{display:grid;gap:.8rem}
+.nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);background:rgba(250,248,245,.92);cursor:pointer;display:grid;place-items:center;padding:0}
+.nav svg{width:20px;height:20px;fill:none;stroke:var(--choc);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.nav:hover{background:var(--bg)}
+.nav.prev{left:.6rem}.nav.next{right:.6rem}
+.pair figure{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--line)}
+.pair img{width:100%;height:100%;object-fit:cover;display:block}
+.pair figcaption{position:absolute;left:.8rem;top:.8rem;padding:.2rem .7rem;font-size:.8rem;background:rgba(42,42,42,.85);color:#fff}
+.pair-name{margin-top:.9rem;font-size:.95rem;color:var(--mute)}
+.picks{display:flex;gap:.5rem;margin-top:1.2rem;overflow-x:auto;padding-bottom:.4rem}
+.picks button{flex:0 0 auto;width:64px;height:64px;padding:0;border:2px solid transparent;background:var(--line);cursor:pointer;opacity:.7}
+.picks button[aria-pressed=true]{border-color:var(--gold);opacity:1}
+.picks img{width:100%;height:100%;object-fit:cover;display:block}
 
-/* SERVICES */
-.services-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 24px; margin-top: 40px;
-}
-.service-card {
-  background: #fff; padding: 32px 24px;
-  border-radius: 8px; border: 1px solid var(--line);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(61,40,23,0.08);
-}
-.service-num {
-  font-family: var(--serif); font-size: 40px;
-  color: var(--gold); font-weight: 600;
-  line-height: 1; margin-bottom: 16px;
-}
-.service-card h3 {
-  font-size: 22px; margin-bottom: 12px;
-}
-.service-card p { color: var(--mute); font-size: 15px; }
+.cards{display:grid;gap:1rem}
+.card{border:1px solid var(--line);padding:1.6rem;background:#fff;border-top:2px solid var(--gold)}
+.card p{font-size:.93rem;color:var(--mute)}
 
-/* FORMAT */
-.format-steps {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 24px; margin-top: 40px;
-}
-.step {
-  background: #fff; padding: 28px 20px;
-  border-radius: 8px; border: 1px solid var(--line);
-}
-.step-num {
-  font-family: var(--serif); font-size: 32px;
-  color: var(--gold); font-weight: 600;
-  margin-bottom: 12px;
-}
-.step h4 {
-  font-size: 18px; margin-bottom: 10px;
-}
-.step p { font-size: 14px; color: var(--mute); }
-.format-note {
-  margin-top: 40px; padding: 28px;
-  background: #fff; border-radius: 8px;
-  border-left: 3px solid var(--gold);
-}
-.format-note p { margin-bottom: 12px; }
-.format-note p:last-child { margin-bottom: 0; }
+blockquote{max-width:62ch;font:500 clamp(1.3rem,2.6vw,1.8rem)/1.4 var(--serif);color:var(--choc);border-left:2px solid var(--gold);padding-left:1.4rem}
 
-/* CONTACTS */
-.contacts-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 20px; margin-top: 40px;
-}
-.contact-card {
-  background: #fff; padding: 28px;
-  border-radius: 8px; border: 1px solid var(--line);
-  text-align: center;
-}
-.contact-card a {
-  font-family: var(--serif); font-size: 22px;
-  color: var(--choc); font-weight: 600;
-}
-.contact-card a:hover { color: var(--gold); }
-.contact-label {
-  font-size: 13px; color: var(--mute);
-  margin-top: 8px;
-}
-.contact-hint {
-  margin-top: 32px; text-align: center;
-  color: var(--mute); font-size: 14px;
-}
+.links{display:flex;flex-wrap:wrap;gap:.7rem}
+.links a{border:1px solid var(--choc);padding:.7rem 1.3rem;text-decoration:none;color:var(--choc);border-radius:2px;transition:background .2s,color .2s}
+.links a:hover{background:var(--choc);color:var(--bg)}
 
-/* FOOTER */
-footer {
-  padding: 40px 0;
-  text-align: center;
-  font-size: 13px; color: var(--mute);
-  border-top: 1px solid var(--line);
-}
+footer{background:var(--choc);color:#efe7dc;padding:3rem 0;text-align:center;font-size:.88rem}
+footer svg{width:64px;height:64px;stroke:var(--gold);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;margin:1rem auto;display:block}
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .nav-links { display: none; }
-  .hero h1 { font-size: 42px; }
-  .hero-grid, .about-grid, .visual-grid { grid-template-columns: 1fr; gap: 32px; }
-  .portfolio-grid, .services-grid, .contacts-grid { grid-template-columns: 1fr; }
-  .format-steps { grid-template-columns: 1fr 1fr; }
-  .exp-item { grid-template-columns: 1fr; gap: 8px; }
-  section { padding: 50px 0; }
+/* курсор-самолёт (включается скриптом только на десктопе) */
+#plane{position:fixed;left:0;top:0;width:40px;height:40px;pointer-events:none;z-index:100;opacity:0;transform:translate(-100px,-100px);transition:opacity .6s ease;stroke:var(--choc);fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 2px rgba(250,248,245,.95))}
+/* курсор-стрелка в цвете сайта */
+html{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M4 2v18l4.6-4.4 3.2 7 3-1.4-3.1-6.8H19z' fill='%233D2817' stroke='%23FAF8F5' stroke-width='1.4' stroke-linejoin='round'/%3E%3C/svg%3E") 4 2,auto}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (min-width:480px){.grid{grid-template-columns:1fr 1fr}}
+@media (min-width:640px){.pair{grid-template-columns:1fr 1fr}}
+@media (min-width:768px){.picks button{width:76px;height:76px}}
+@media (min-width:768px){
+ .about{grid-template-columns:minmax(220px,.8fr) 1.4fr;gap:2.5rem 4rem}
+ .about .facts{grid-column:1/-1}
+ .range{grid-template-columns:1fr 1fr}
+ .cards{grid-template-columns:1fr 1fr}
+ section{padding:6rem 0}
 }
+@media (min-width:900px){.range{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1024px){
+ .hero{grid-template-columns:1fr 1fr;min-height:80vh}
+ .hero-photo{aspect-ratio:auto}.hero-in{align-self:center;padding:4rem 3rem 4rem max(1.25rem,calc((100vw - 1180px)/2))}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .about{grid-template-columns:minmax(220px,.8fr) 1.4fr 1fr}
+ .about .facts{grid-column:auto}
+ .cards{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:1440px){.wrap{width:min(1280px,100% - 4rem)}h1{font-size:5rem}}
 </style>
 </head>
 <body>
+<a class="skip" href="#about">К содержанию</a>
+
+<!-- Самолёт одной непрерывной линией: один path; используется в футере и как курсор -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="plane-sym" viewBox="0 0 100 100"><path d="M94 50L64 45L42 16L33 16L47 45L21 45L12 35L6 35L12 50L6 65L12 65L21 55L47 55L33 84L42 84L64 55Z"/></symbol>
+</svg>
 
 <header>
-  <nav class="nav">
-    <a href="#top" class="logo">Milana <span>Volnaya</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">Обо мне</a></li>
-      <li><a href="#portfolio">Портфолио</a></li>
-      <li><a href="#range">Ассортимент</a></li>
-      <li><a href="#services">Услуги</a></li>
-      <li><a href="#format">Формат работы</a></li>
-      <li><a href="#contacts">Контакты</a></li>
-    </ul>
+ <div class="wrap bar">
+  <a class="brand" href="#top" aria-label="Milana Volnaya, на главную">
+   <span class="mono" aria-hidden="true">M<i></i>V</span>
+   <span><b>Milana Volnaya</b><small>Кондитер · Разработка десертных меню</small></span>
+  </a>
+  <nav aria-label="Разделы">
+   <a href="#about">Обо мне</a><a href="#portfolio">Портфолио</a><a href="#range">Ассортимент</a><a href="#services">Услуги</a><a href="#format">Формат работы</a><a href="#contacts">Контакты</a>
   </nav>
+ </div>
 </header>
 
-<section class="hero" id="top">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <h1>Milana <em>Volnaya</em></h1>
-        <p class="subtitle">Кондитер · Разработка десертных меню</p>
-        <p class="desc">Помогаю отелям, ресторанам и кафе открыть или обновить десертное направление: ассортимент, рецептуры, запуск, обучение команды. В профессии с 2016 года. Частные заказы на торты и десерты не принимаю.</p>
-        <a href="https://wa.me/79384899030" class="btn">Обсудить проект</a>
-      </div>
-      <div>
-        <img src="hero-b2b.jpg" alt="Десерты Миланы Вольной" class="hero-img">
-        <p class="hero-caption">На фото: мои разработки. Торты, зефир, маршмеллоу, начинки для моти</p>
-      </div>
-    </div>
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+ <div class="hero-in">
+  <h1 id="h1">Milana Volnaya<span class="role"><span class="sr"> — </span>Кондитер · Разработка десертных меню</span></h1>
+  <p class="lead">Помогаю отелям, ресторанам и кафе открыть или обновить десертное направление: ассортимент, рецептуры, запуск, обучение команды. В профессии с 2016 года. Частные заказы на торты и десерты не принимаю.</p>
+  <div class="cta">
+   <a class="btn" href="https://wa.me/79384899030">Обсудить проект</a>
   </div>
+  <p class="cap" style="margin-top:1.4rem">На фото: мои разработки. Торты, зефир, маршмеллоу, начинки для моти</p>
+ </div>
+ <div class="hero-photo" role="group" aria-label="Фотографии десертов">
+  <div class="hero-bg" id="heroBg">
+   <div class="slide on" style="background-image:url(photos/sugar-ball.jpg);background-position:50% 12%" role="img" aria-label="Торт с золотым шоколадным шаром и физалисом"></div>
+   <div class="slide" style="background-image:url(photos/private-01.jpg)" role="img" aria-label="Торт с физалисом и шоколадной сеткой"></div>
+   <div class="slide" style="background-image:url(photos/zefir-shelf.jpg)" role="img" aria-label="Зефир, маршмеллоу и безе на прозрачных полках"></div>
+   <div class="slide" style="background-image:url(photos/zozh-02.jpg)" role="img" aria-label="Зефир"></div>
+   <div class="slide" style="background-image:url(photos/zozh-03.jpg)" role="img" aria-label="Маршмеллоу"></div>
+   <div class="slide" style="background-image:url(photos/private-03.jpg)" role="img" aria-label="Моти с фисташкой в разрезе: авторская начинка"></div>
+  </div>
+  <div class="dots" id="heroDots" aria-label="Выбрать фото"></div>
+ </div>
 </section>
 
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div>
-        <h2 style="font-size:42px; margin-bottom:24px;">Обо мне</h2>
-        <div class="about-text">
-          <p>Работаю кондитером с 2016 года: в ресторанах, отелях и кафе Владивостока, Москвы, Сочи и Краснодара. На шведских линиях трёх отелей Сочи отрабатывала большой ассортимент, а в нескольких местах разрабатывала ассортимент и рецептуры для заведения.</p>
-          <p>Образование: повар-кондитер (колледж, 2008). Несколько лет работала в полиграфии и фотомастерских, поэтому этот сайт и все фотографии для него я сделала сама.</p>
-        </div>
-      </div>
-      <div>
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-num">2016</div>
-            <div class="stat-label">год начала практики</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">3</div>
-            <div class="stat-label">проекта: разработка ассортимента и рецептур</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">3</div>
-            <div class="stat-label">отеля со шведской линией</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">4</div>
-            <div class="stat-label">города: Владивосток, Москва, Сочи, Краснодар</div>
-          </div>
-        </div>
-      </div>
-    </div>
+<section id="about" class="reveal" aria-labelledby="h-about">
+ <div class="wrap about">
+  <figure class="portrait"><img src="photos/portrait.jpg" width="1200" height="1600" alt="Милана Вольная, кондитер" onerror="this.parentNode.remove()"></figure>
+  <div>
+   <h2 id="h-about">Обо мне</h2>
+   <p>Работаю кондитером с 2016 года: в ресторанах, отелях и кафе Владивостока, Москвы, Сочи и Краснодара. На шведских линиях трёх отелей Сочи отрабатывала большой ассортимент, а в нескольких местах разрабатывала ассортимент и рецептуры для заведения.</p>
+   <p>Образование: повар-кондитер (колледж, 2008). Несколько лет работала в полиграфии и фотомастерских, поэтому этот сайт и все фотографии для него я сделала сама.</p>
   </div>
+  <div class="facts">
+   <div><b>2016</b><span>год начала практики</span></div>
+   <div><b>3</b><span>проекта: разработка ассортимента и рецептур</span></div>
+   <div><b>3</b><span>отеля со шведской линией</span></div>
+   <div><b>4</b><span>города: Владивосток, Москва, Сочи, Краснодар</span></div>
+  </div>
+ </div>
 </section>
 
-<section id="portfolio">
-  <div class="container">
-    <h2 style="font-size:42px; margin-bottom:12px;">Портфолио</h2>
-    <p style="color:var(--mute);">Шведский стол · Без белого сахара и белой муки · Алякарт · Для кафе · Моти</p>
-    <div class="portfolio-grid">
-      <img src="catering-01.jpg" alt="Портфолио 1">
-      <img src="catering-02.jpg" alt="Портфолио 2">
-      <img src="catering-03.jpg" alt="Портфолио 3">
-      <img src="catering-04.jpg" alt="Портфолио 4">
-      <img src="catering-05.jpg" alt="Портфолио 5">
-      <img src="catering-06.jpg" alt="Портфолио 6">
-    </div>
+<section id="portfolio" class="alt reveal" aria-labelledby="h-port">
+ <div class="wrap">
+  <h2 id="h-port">Портфолио</h2>
+  <div class="tabs" role="tablist" aria-label="Категории работ">
+   <button role="tab" id="t-swed" aria-selected="true" aria-controls="grid" data-tab="swed">Шведский стол</button>
+   <button role="tab" id="t-sugar" aria-selected="false" aria-controls="grid" data-tab="sugar">Без белого сахара и белой муки</button>
+   <button role="tab" id="t-ala" aria-selected="false" aria-controls="grid" data-tab="ala">Алякарт</button>
+   <button role="tab" id="t-cafe" aria-selected="false" aria-controls="grid" data-tab="cafe">Для кафе</button>
+   <button role="tab" id="t-moti" aria-selected="false" aria-controls="grid" data-tab="moti">Моти</button>
   </div>
+  <p class="cap" id="tabNote" style="margin:-.6rem 0 1.2rem"></p>
+  <div class="grid" id="grid" role="tabpanel" aria-labelledby="t-swed"></div>
+ </div>
 </section>
 
-<section id="range">
-  <div class="container">
-    <h2 style="font-size:42px; margin-bottom:12px;">Ассортимент</h2>
-    <p style="color:var(--mute); margin-bottom:32px;">Позиции, которые готовила</p>
-
-    <div class="range-tabs">
-      <button class="tab active" onclick="showTab('showcase')">Для витрины</button>
-      <button class="tab" onclick="showTab('healthy')">Постное и ЗОЖ</button>
-      <button class="tab" onclick="showTab('banquet')">Для банкетов и фуршетов</button>
-    </div>
-
-    <div id="showcase" class="range-content active">
-      <h3>Торты</h3>
-      <p>Арабика, Три шоколада, Шоколадное чудо, Чёрный лес, Опера, Каро, Эстерхази, Апшерон, Медовик, Наполеон, Пчёлка, Сметанник, Красный бархат, Прага, Чёрный принц, Киевский, Царица, Молочная девочка, Апельсин-шоколад, Австралия, Захер, Панчо, белковый рулет, Кокос-маракуйя.</p>
-
-      <h3>Чизкейки и творожные</h3>
-      <p>Чизкейк классический, с халвой, творог-мрамор, горячий чизкейк, баскский чизкейк.</p>
-
-      <h3>Муссовые и шоколадные</h3>
-      <p>Муссово-ягодный, кофейный мусс. Трюфель; работа с шоколадом: темперирование, капсульные конфеты, фигурки по формам.</p>
-
-      <h3>Десерты</h3>
-      <p>Шоколадный фондан, тирамису, сырники, запеканка, шу, буше, ореховый пай, пирог «творожная крошка».</p>
-    </div>
-
-    <div id="healthy" class="range-content">
-      <h3>Без белого сахара и белой муки</h3>
-      <p>Медовик (цельнозерновой), Птичье молоко, Сникерс, эклеры.</p>
-
-      <h3>Веганские</h3>
-      <p>Птичье молоко, чизкейк.</p>
-
-      <h3>Сыроедческие</h3>
-      <p>Торты «Апельсин + шоколад», «Питахайя + манго», «Лайм-базилик + клубника», «Бананово-арахисовый», «Шоколад + чёрная смородина»; десерт «Авокадо-алоэ»; творожная пасха.</p>
-
-      <h3>Сорбеты</h3>
-    </div>
-
-    <div id="banquet" class="range-content">
-      <h3>Порционные десерты</h3>
-      <p>Профитроли, эклеры, канноли, макарон, моти, Павлова, трайфл с малиной, крем-брюле, мини-чизкейки и панна-котта в тарталетках.</p>
-
-      <h3>Печенье</h3>
-      <p>Песочное, кокосовое, шоколадное, творожное, постное, пряник, «Красный бархат».</p>
-
-      <h3>Сладости и снеки</h3>
-      <p>Пахлава, орешки, гранола нарезная, безе, зефир, маршмеллоу, помадка.</p>
-
-      <h3>Конфеты ручной работы</h3>
-      <p>Мёд-курага, кэроб-кунжут, тыквенные, финик-кешью, миндаль-кокос.</p>
-
-      <h3>Мороженое</h3>
-      <p>Пломбир, фисташковое, шоколадное, медовое, с халвой, ванильное.</p>
-    </div>
+<section id="range" class="reveal" aria-labelledby="h-range">
+ <div class="wrap">
+  <h2 id="h-range">Ассортимент</h2>
+  <p class="cap">Позиции, которые готовила</p>
+  <div class="range">
+   <div><h3>Для витрины</h3>
+    <div class="hl"><p>Торты: Арабика, Три шоколада, Шоколадное чудо, Чёрный лес, Опера, Каро, Эстерхази, Апшерон, Медовик, Наполеон.</p><p>Чизкейки: баскский, с халвой, горячий.</p></div>
+    <div class="full">
+    <p><b>Торты:</b> Медовик, Пчёлка, Сметанник, Наполеон, Красный бархат, Прага, Апшерон, Чёрный лес, Опера, Чёрный принц, Эстерхази, Киевский, Царица, Молочная девочка, Три шоколада, Шоколадное чудо, Апельсин-шоколад, Каро, Арабика, Австралия, Захер, Панчо, белковый рулет, Кокос-маракуйя.</p>
+    <p><b>Чизкейки и творожные:</b> чизкейк классический, с халвой, творог-мрамор, горячий чизкейк, баскский чизкейк.</p>
+    <p><b>Муссовые:</b> муссово-ягодный, кофейный мусс. <b>Шоколадные:</b> трюфель; работа с шоколадом: темперирование, капсульные конфеты, фигурки по формам.</p>
+    <p><b>Десерты:</b> шоколадный фондан, тирамису, сырники, запеканка, шу, буше, ореховый пай, пирог «творожная крошка».</p></div></div>
+   <div><h3>Для постного и ЗОЖ-меню</h3>
+    <div class="hl"><p>Сыроедческие торты «Апельсин + шоколад» и «Питахайя + манго». Птичье молоко без белого сахара и веганское. Сникерс и эклеры без белого сахара. Медовик цельнозерновой.</p></div>
+    <div class="full">
+    <p><b>Без белого сахара и белой муки:</b> медовик (цельнозерновой), Птичье молоко, Сникерс, эклеры.</p>
+    <p><b>Веганские:</b> Птичье молоко, чизкейк.</p>
+    <p><b>Сыроедческие:</b> торты «Апельсин + шоколад», «Питахайя + манго», «Лайм-базилик + клубника», «Бананово-арахисовый», «Шоколад + чёрная смородина»; десерт «Авокадо-алоэ»; творожная пасха.</p>
+    <p><b>Сорбеты.</b></p></div></div>
+   <div><h3>Для банкетов и фуршетов</h3>
+    <div class="hl"><p>Порционные: профитроли, эклеры, канноли, макарон, моти. Печенье, зефир и маршмеллоу, конфеты ручной работы.</p></div>
+    <div class="full">
+    <p><b>Порционные:</b> профитроли, эклеры, канноли, макарон, моти, Павлова, трайфл с малиной, крем-брюле, мини-чизкейки и панна-котта в тарталетках.</p>
+    <p><b>Печенье:</b> песочное, кокосовое, шоколадное, творожное, постное, пряник, «Красный бархат».</p>
+    <p><b>Сладости и снеки:</b> пахлава, орешки, гранола нарезная, безе, зефир, маршмеллоу, помадка.</p>
+    <p><b>Конфеты ручной работы:</b> мёд-курага, кэроб-кунжут, тыквенные, финик-кешью, миндаль-кокос.</p>
+    <p><b>Мороженое:</b> пломбир, фисташковое, шоколадное, медовое, с халвой, ванильное.</p></div></div>
   </div>
+  <button class="more-btn" type="button" id="rangeBtn" aria-expanded="false">Показать весь список</button>
+ </div>
 </section>
 
-<section id="experience">
-  <div class="container">
-    <h2 style="font-size:42px; margin-bottom:12px;">Что уже делала</h2>
-    <p style="color:var(--mute);">Разработка ассортимента, рецептуры и обучение команды: на реальных объектах, в штате заведений.</p>
-
-    <div class="exp-list">
-      <div class="exp-item">
-        <div class="exp-year">2020</div>
-        <div>
-          <div class="exp-title">Кондитерский цех, Москва</div>
-          <div class="exp-desc">Старший кондитер. Отрабатывала рецептуры, участвовала в составлении техкарт, организовала работу цеха и обучала персонал.</div>
-        </div>
-      </div>
-      <div class="exp-item">
-        <div class="exp-year">2022–2023</div>
-        <div>
-          <div class="exp-title">Шведская линия отеля, Сочи</div>
-          <div class="exp-desc">Составила ассортимент кондитерских и хлебобулочных изделий для шведской линии, отработала его и участвовала в составлении техкарт.</div>
-        </div>
-      </div>
-      <div class="exp-item">
-        <div class="exp-year">2024</div>
-        <div>
-          <div class="exp-title">Десерты без белого сахара</div>
-          <div class="exp-desc">Участвовала в запуске небольшого магазина: подобрала и адаптировала рецепты без белого сахара и белой муки, участвовала в составлении техкарт, запустила производство.</div>
-        </div>
-      </div>
-    </div>
+<section id="case" class="alt reveal" aria-labelledby="h-case">
+ <div class="wrap">
+  <h2 id="h-case">Что уже делала</h2>
+  <p class="lead">Разработка ассортимента, рецептуры и обучение команды: на реальных объектах, в штате заведений.</p>
+  <div class="range">
+   <div><h3>Кондитерский цех, Москва · 2020</h3><p>Старший кондитер. Отрабатывала рецептуры, участвовала в составлении техкарт, организовала работу цеха и обучала персонал.</p></div>
+   <div><h3>Шведская линия отеля, Сочи · 2022–2023</h3><p>Составила ассортимент кондитерских и хлебобулочных изделий для шведской линии, отработала его и участвовала в составлении техкарт.</p></div>
+   <div><h3>Десерты без белого сахара · 2024</h3><p>Участвовала в запуске небольшого магазина: подобрала и адаптировала рецепты без белого сахара и белой муки, участвовала в составлении техкарт, запустила производство.</p></div>
   </div>
+ </div>
 </section>
 
-<section id="visual">
-  <div class="container">
-    <h2 style="font-size:42px; margin-bottom:12px;">Визуальная упаковка десертов</h2>
-    <p style="color:var(--mute); max-width:700px;">Дополнительная услуга: подготовка фото к меню и соцсетям. Свет, фон, подача. Ниже исходные кадры и результат. Основную часть делаю с помощью ИИ-инструментов, детали дорабатываю в Photoshop. Можно заказать отдельно.</p>
-
-    <div class="visual-grid">
-      <div class="visual-card">
-        <img src="catering-kiwi-squares.jpg" alt="До обработки">
-        <div class="visual-label">До</div>
-      </div>
-      <div class="visual-card">
-        <img src="kiwi.jpg" alt="После обработки">
-        <div class="visual-label">После</div>
-      </div>
-    </div>
+<section id="visual" class="reveal" aria-labelledby="h-vis">
+ <div class="wrap">
+  <h2 id="h-vis">Визуальная упаковка десертов</h2>
+  <p class="lead">Дополнительная услуга: подготовка фото к меню и соцсетям. Свет, фон, подача. Ниже исходные кадры и результат. Основную часть делаю с помощью ИИ-инструментов, детали дорабатываю в Photoshop. Можно заказать отдельно.</p>
+  <div class="pair-wrap">
+   <button class="nav prev" type="button" aria-label="Предыдущий пример"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+   <div class="pair" id="pair" aria-live="polite">
+    <figure><img id="pBefore" alt="Исходный кадр" width="1100" height="1100"><figcaption>До</figcaption></figure>
+    <figure><img id="pAfter" alt="Кадр после обработки" width="1024" height="1024"><figcaption>После</figcaption></figure>
+   </div>
+   <button class="nav next" type="button" aria-label="Следующий пример"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
   </div>
+  <p class="pair-name" id="pName"></p>
+  <div class="picks" id="picks" role="group" aria-label="Выбрать пример"></div>
+ </div>
 </section>
 
-<section id="services">
-  <div class="container">
-    <h2 style="font-size:42px; margin-bottom:12px;">Услуги</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-num">01</div>
-        <h3>Открытие и обновление десертного направления</h3>
-        <p>Разработка десертного меню, рецептуры, запуск. Помощь при открытии заведения или смене линейки.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-num">02</div>
-        <h3>Обучение команды</h3>
-        <p>Передача рецептур, постановка работы цеха, разбор техники на месте.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-num">03</div>
-        <h3>Визуальная упаковка</h3>
-        <p>Обработка и стилизация фото для меню и соцсетей.</p>
-      </div>
-    </div>
+<section id="services" class="alt reveal" aria-labelledby="h-serv">
+ <div class="wrap">
+  <h2 id="h-serv">Услуги</h2>
+  <div class="cards">
+   <article class="card"><h3>Открытие и обновление десертного направления</h3><p>Разработка десертного меню, рецептуры, запуск. Помощь при открытии заведения или смене линейки.</p></article>
+   <article class="card"><h3>Обучение команды</h3><p>Передача рецептур, постановка работы цеха, разбор техники на месте.</p></article>
+   <article class="card"><h3>Визуальная упаковка</h3><p>Обработка и стилизация фото для меню и соцсетей.</p></article>
   </div>
+ </div>
 </section>
 
-<section id="format">
-  <div class="container">
-    <h2 style="font-size:42px; margin-bottom:12px;">Формат работы</h2>
-
-    <div class="format-steps">
-      <div class="step">
-        <div class="step-num">01</div>
-        <h4>Вводные</h4>
-        <p>Лучше в переписке: концепция заведения, гости, оборудование, сроки. Понимаю, что нужно, и честно говорю, что могу сделать. Созвон по договорённости.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <h4>Условия</h4>
-        <p>Договор, объём работ, выезд, жильё и перелёт. Всё фиксируем до начала.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <h4>Разработка и пробы</h4>
-        <p>Ассортимент, рецептуры, пробные партии. Правки по вашим отзывам.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <h4>Запуск и обучение</h4>
-        <p>Работаю с командой на месте, передаю рецептуры и приёмы, чтобы дальше вы справлялись сами.</p>
-      </div>
-    </div>
-
-    <div class="format-note">
-      <p>Я работаю на проектах: разрабатываю ассортимент и рецептуры, помогаю с запуском, обучаю команду. Собственной производственной кухни у меня нет, работаю на территории заказчика. Готова к выездам в другие города, условия по жилью и перелёту обсуждаем заранее.</p>
-      <p>Стоимость зависит от объёма, города и сроков. Называю её после обсуждения проекта в переписке.</p>
-      <p>Работаю как ИП на налоге на профессиональный доход: договор, акты, чеки. Реквизиты по запросу.</p>
-    </div>
-  </div>
+<section id="format" class="reveal" aria-labelledby="h-form">
+ <div class="wrap">
+  <h2 id="h-form">Формат работы</h2>
+  <ol class="steps">
+   <li><b>Вводные</b><span>Лучше в переписке: концепция заведения, гости, оборудование, сроки. Понимаю, что нужно, и честно говорю, что могу сделать. Созвон по договорённости.</span></li>
+   <li><b>Условия</b><span>Договор, объём работ, выезд, жильё и перелёт. Всё фиксируем до начала.</span></li>
+   <li><b>Разработка и пробы</b><span>Ассортимент, рецептуры, пробные партии. Правки по вашим отзывам.</span></li>
+   <li><b>Запуск и обучение</b><span>Работаю с командой на месте, передаю рецептуры и приёмы, чтобы дальше вы справлялись сами.</span></li>
+  </ol>
+  <blockquote>Я работаю на проектах: разрабатываю ассортимент и рецептуры, помогаю с запуском, обучаю команду. Собственной производственной кухни у меня нет, работаю на территории заказчика. Готова к выездам в другие города, условия по жилью и перелёту обсуждаем заранее.</blockquote>
+  <p class="lead" style="margin-top:1.4rem">Стоимость зависит от объёма, города и сроков. Называю её после обсуждения проекта в переписке.</p>
+  <p class="lead" style="margin-top:.8rem">Работаю как ИП на налоге на профессиональный доход: договор, акты, чеки. Реквизиты по запросу.</p>
+ </div>
 </section>
 
-<section id="contacts">
-  <div class="container">
-    <h2 style="font-size:42px; margin-bottom:12px;">Контакты</h2>
-    <p style="color:var(--mute); max-width:600px;">Для обсуждения напишите в WhatsApp, MAX или на почту. Укажите: тип проекта, город, сроки.</p>
-
-    <div class="contacts-grid">
-      <div class="contact-card">
-        <a href="https://wa.me/79384899030">WhatsApp</a>
-        <div class="contact-label">Быстрый ответ</div>
-      </div>
-      <div class="contact-card">
-        <a href="https://max.ru/u/f9LHodD0cOIe6-iRkwB9F_v4B6xOthyV42YDriRrY6S27lYJ2A652_Oyggg">MAX</a>
-        <div class="contact-label">Мессенджер</div>
-      </div>
-      <div class="contact-card">
-        <a href="mailto:life.photo.vl@gmail.com">Email</a>
-        <div class="contact-label">life.photo.vl@gmail.com</div>
-      </div>
-    </div>
-
-    <p class="contact-hint">Отвечаю в течение рабочего дня.</p>
+<section id="contacts" class="alt reveal" aria-labelledby="h-cont">
+ <div class="wrap">
+  <h2 id="h-cont">Контакты</h2>
+  <p class="lead" style="margin-bottom:1.5rem">Для обсуждения напишите в WhatsApp, MAX или на почту. Укажите: тип проекта, город, сроки.</p>
+  <div class="links">
+   <a href="https://wa.me/79384899030">WhatsApp</a>
+   <a href="https://max.ru/u/f9LHodD0cOIe6-iRkwB9F_v4B6xOthyV42YDriRrY6S27lYJ2A652_Oyggg" target="_blank" rel="noopener">MAX</a>
+   <a href="mailto:life.photo.vl@gmail.com">Email</a>
   </div>
+ </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
 
 <footer>
-  <div class="container">
-    © 2026 Milana Volnaya
-  </div>
+ <div class="wrap">
+  <p>© <span id="yr">2026</span> Milana Volnaya</p>
+  <svg viewBox="0 0 100 100" role="img" aria-label="Знак: самолёт одной линией"><use href="#plane-sym"/></svg>
+ </div>
 </footer>
 
-<script>
-function showTab(id) {
-  document.querySelectorAll('.range-content').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  event.target.classList.add('active');
-}
-</script>
+<svg id="plane" viewBox="0 0 100 100" aria-hidden="true"><use href="#plane-sym"/></svg>
 
+<script>
+(function(){
+ var $=function(s){return document.querySelector(s)}, $$=function(s){return[].slice.call(document.querySelectorAll(s))};
+ $('#yr').textContent=new Date().getFullYear();
+
+ /* портфолио. Файлы лежат в папке photos рядом с index.html. Нет файла = карточка не показывается */
+ var P='photos/';
+ var works={
+  swed:[['catering-01','Общий план стола'],['catering-02','Ярусные подставки с порционными десертами'],['catering-03','Порционные десерты на ярусах'],['catering-04','Вид сверху: подставки и сервировка'],['catering-05','Блюда с выпечкой и пирожными'],['catering-06','Порционные пирожные с малиной'],['catering-07','Ассорти для фуршета']],
+  sugar:[['sugar-ball','Торт с золотым шоколадным шаром и физалисом'],['private-01','Торт с физалисом и шоколадной сеткой'],['zefir-shelf','Зефир, маршмеллоу и безе на полках'],['zozh-02','Зефир без белого сахара'],['zozh-03','Маршмеллоу без белого сахара'],['zefir-cut','Зефир в разрезе'],['zefir-pair','Зефир клубничный и ванильный'],['marsh-rope','Маршмеллоу мятный: жгуты и нарезка'],['pack-boxes','Зефир и пастила в коробках']],
+  moti:[['private-mochi-3','Моти с клубникой'],['private-03','Моти с фисташкой в разрезе'],['moti-four','Моти в ассортименте']],
+  ala:[['menu-01','Десерт на керамической тарелке'],['menu-02','Пахлава с фисташковым мороженым'],['menu-03','Канноли с фисташкой'],['menu-04','Десерт с ореховой карамелью и кремом'],['menu-05','Пирог с мороженым на доске'],['menu-06','Шоколадный фондан с клубникой'],['menu-07','Сырники с вишнёвым соусом'],['menu-08','Десерт с шоколадом и попкорном'],['menu-bakskiy','Чизкейк с ягодным соусом и мороженым'],['menu-lapunto-145','Десерт с ореховой крошкой и мороженым'],['menu-parus-11','Шоколадный десерт с вишней и мороженым']],
+  cafe:[['private-02','Торт с шоколадной вишней'],['private-04','Макаруны'],['private-05','Эклеры'],['private-black-forest','Шоколадный торт с вишней'],['private-fruit-tart','Тарт с фруктами'],['private-mousse-slices','Муссовые порции с шоколадным декором'],['private-berry-cake','Торт с карамельной глазурью и ягодами'],['zozh-01','Мусс с карамельным слоем и пеканом']]
+ };
+ var grid=$('#grid');
+ function render(k){
+  grid.innerHTML='';
+  works[k].forEach(function(w){
+   var f=document.createElement('figure');f.className='ph';
+   var i=document.createElement('img');i.src=P+w[0]+'.jpg';i.alt=w[1];i.loading='lazy';
+   i.onerror=function(){f.remove()};f.appendChild(i);
+   grid.appendChild(f);
+  });
+ }
+ var notes={swed:'Готовила на шведских линиях отелей.',sugar:'Мои проработки без белого сахара и белой муки.',ala:'Готовила в ресторанах для а-ля карт.',cafe:'Готовила для кафе и ресторанов.',moti:'Начинки для моти мои. Моти с сахаром.'};
+ function note(k){var n=document.getElementById('tabNote');if(n)n.textContent=notes[k]||''}
+ render('swed');note('swed');
+ $$('[data-tab]').forEach(function(b){b.addEventListener('click',function(){
+  $$('[data-tab]').forEach(function(x){x.setAttribute('aria-selected',x===b)});
+  grid.setAttribute('aria-labelledby',b.id);render(b.dataset.tab);note(b.dataset.tab);
+ })});
+
+/* До / После: пары «исходник — результат» */
+ var pairs=[
+  ['fondant','menu-06','Шоколадный фондан с клубникой','50% 55%'],
+  ['pear','menu-05','Грушевый тарт с мороженым','50% 62%'],
+  ['popcorn','menu-08','Чизкейк с шоколадом и попкорном','50% 68%'],
+  ['mochi-straw','private-mochi-3','Моти с клубникой','50% 50%'],
+  ['mochi-pist','private-03','Моти с фисташкой','50% 55%'],
+  ['eclair','menu-04','Десерт с шоколадом, орехами и золотом','50% 50%'],
+  ['leaf','menu-01','Тарт с орехами и мороженым','50% 50%'],
+  ['lapunto','menu-lapunto-145','Десерт с ореховой крошкой и мороженым','50% 50%'],
+  ['cones','private-cones','Рожки с кремом','50% 50%'],
+  ['tables','catering-05','Выпечка и тарт на подставках','50% 62%'],
+  ['tiers','catering-04','Пирожные на ярусных подставках','50% 55%']
+ ];
+ var pB=$('#pBefore'),pA=$('#pAfter'),pN=$('#pName'),pk=$('#picks'),vis=$('#visual');
+ var cur=0;
+ function showPair(i){
+  cur=(i+pairs.length)%pairs.length;i=cur;
+  var p=pairs[i];
+  pB.src=P+'before/'+p[0]+'.jpg';pA.src=P+p[1]+'.jpg';
+  pB.style.objectPosition=p[3];pN.textContent=p[2];
+  [].forEach.call(pk.children,function(b,j){b.setAttribute('aria-pressed',j===i)});
+ }
+ pairs.forEach(function(p,i){
+  var b=document.createElement('button');b.type='button';b.setAttribute('aria-label',p[2]);
+  var t=new Image();t.src=P+p[1]+'.jpg';t.alt='';t.loading='lazy';b.appendChild(t);
+  b.addEventListener('click',function(){showPair(i)});pk.appendChild(b);
+ });
+ pB.onerror=function(){vis.hidden=true};
+ $('.nav.prev').addEventListener('click',function(){showPair(cur-1)});
+ $('.nav.next').addEventListener('click',function(){showPair(cur+1)});
+ addEventListener('keydown',function(e){
+  if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)return;
+  if(e.key!=='ArrowLeft'&&e.key!=='ArrowRight')return;
+  var t=e.target&&e.target.tagName;if(t==='INPUT'||t==='TEXTAREA'||t==='SELECT')return;
+  var r=vis.getBoundingClientRect();if(r.top>innerHeight*.6||r.bottom<innerHeight*.4)return;
+  e.preventDefault();showPair(cur+(e.key==='ArrowRight'?1:-1));
+ });
+ showPair(0);
+
+ var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ var els=$$('.reveal');
+ if('IntersectionObserver' in window&&!reduce){
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(el){io.observe(el)});
+ }else els.forEach(function(el){el.classList.add('in')});
+
+ (function(){var sl=[].slice.call(document.querySelectorAll('#heroBg .slide')),dt=document.getElementById('heroDots');if(sl.length<2||!dt)return;
+  var i=0,t=0,ds=sl.map(function(_,k){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Фото '+(k+1));b.addEventListener('click',function(){go(k);start()});dt.appendChild(b);return b});
+  function go(k){i=k;sl.forEach(function(s,j){s.classList.toggle('on',j===k)});ds.forEach(function(d,j){d.setAttribute('aria-current',j===k)})}
+  function start(){clearInterval(t);if(!reduce)t=setInterval(function(){if(!document.hidden)go((i+1)%sl.length)},5500)}
+  go(0);start();
+ })();
+ var bg=$('#heroBg');
+ if(!reduce){addEventListener('scroll',function(){
+  if(scrollY<1200)requestAnimationFrame(function(){bg.style.transform='translateY('+Math.min(scrollY*.08,bg.parentElement.offsetHeight*.07)+'px)'});
+ },{passive:true})}
+
+/* самолёт летит, пока листают страницу; при остановке растворяется */
+ var pl=$('#plane');
+ if(!reduce){
+  var px=null,py=0,pa=0,tx=0,ty=0,ta=0,lastS=scrollY,hideT=0,raf=0;
+  var K=function(){var w=innerWidth,h=innerHeight;return {w:w,h:h,ax:w*(w<700?.34:.4),ay:h*.26}};
+  function step(){
+   px+=(tx-px)*.14;py+=(ty-py)*.14;
+   var d=((ta-pa+540)%360)-180;pa+=d*.12;
+   pl.style.transform='translate('+(px-20)+'px,'+(py-20)+'px) rotate('+pa+'deg)';
+   raf=(Math.abs(tx-px)+Math.abs(ty-py)>.3||Math.abs(d)>.5)?requestAnimationFrame(step):0;
+  }
+  addEventListener('scroll',function(){
+   var s=scrollY,ds=s-lastS;lastS=s;
+   var k=K();
+   tx=k.w/2+k.ax*Math.sin(s/1100);ty=k.h*.52+k.ay*Math.sin(s/700+1);
+   if(ds!==0){
+    var sg=ds>0?1:-1,dx=k.ax/1100*Math.cos(s/1100),dy=k.ay/700*Math.cos(s/700+1);
+    ta=Math.atan2(dy*sg,dx*sg)*180/Math.PI;
+   }
+   if(px===null){px=tx;py=ty;pa=ta}
+   pl.style.opacity=.9;clearTimeout(hideT);hideT=setTimeout(function(){pl.style.opacity=0},900);
+   if(!raf)raf=requestAnimationFrame(step);
+  },{passive:true});
+ }
+})();
+
+(function(){var r=document.getElementById('range'),b=document.getElementById('rangeBtn');if(!r||!b)return;
+b.addEventListener('click',function(){var o=r.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Свернуть':'Показать весь список'})})();
+</script>
 </body>
 </html>
